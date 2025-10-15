@@ -6,14 +6,13 @@ public class BubbleSort {
             boolean swapped = false;
             for (inner = 0; inner < outer; inner++) {
                 if (a[inner] > a[inner + 1]) {
-                    // swap
                     temp = a[inner];
                     a[inner] = a[inner + 1];
                     a[inner + 1] = temp;
                     swapped = true;
                 }
             }
-            if (!swapped) break; // already sorted
+            if (!swapped) break; 
         }
     }
 
